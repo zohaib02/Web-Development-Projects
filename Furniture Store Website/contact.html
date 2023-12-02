@@ -1,0 +1,160 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Furniture R US</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!--link validatioon file-->
+    <script src="form.js" /> </script>
+
+    <style>
+    </style>
+  </head>
+  <!--Body of the website-->
+  <body>
+    <div id="container">
+      <!--header of the website-->
+      <header>
+        <h2>Furniture R US</h2>
+      </header>
+
+      <!--horizontal navigation-->
+      <nav id="main_nav">
+        <table>
+          <tr>
+            <td>
+              <a class="main_button" title="Back to Home page" href="index.html"
+                >Home</a
+              >
+            </td>
+            <td>
+              <a
+                class="main_button"
+                title="Back to Home page"
+                href="offer.html"
+              >
+                Offers
+              </a>
+            </td>
+            <td>
+              <a
+                class="main_button"
+                title="Back to Home page"
+                href="dining.html"
+                >Dining Room</a
+              >
+            </td>
+            <td>
+              <a class="main_button" title="Back to Home page" href="bed.html"
+                >Bedroom</a
+              >
+            </td>
+            <td>
+              <a
+                class="main_button"
+                title="Back to Home page"
+                href="office.html"
+                >Office</a
+              >
+            </td>
+            <td>
+              <a
+                class="main_button"
+                title="Back to Home page"
+                href="contact.html"
+                >Contact Us</a
+              >
+            </td>
+          </tr>
+        </table>
+      </nav>
+
+      <main id="tbody">
+        <h2 id="contact_h2">Contact Us to complain</h2>
+        <div class="contact_contain">
+                
+          <table>
+            <form action="mailto:abc@123.com" name="messageme" onsubmit="return checkdata()">
+              <tr> 
+                <td><h4>Title</h4></td>
+                <td><input type="radio" id="title1" name="title" value="Mr" required><label for="mr">Mr</label></td>
+                <td><input type="radio" id="title2" name="title" value="Mrs" required><label for="mrs">Mrs</label></td>
+              </tr>
+               
+              <tr> 
+                <td><h4>Your name</h4></td>
+                <td><input id="name" type="text" pattern="[a-zA-Z]+" required/></td>
+              </tr>
+
+
+                <form action="/action_page.php">
+                  <tr>
+                    <td><h4>Gender</h4></td>
+                    <td>
+                    <label for="gender"></label>
+                    <select name="gender" id="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>
+              </tr>
+                     
+              <tr>
+                <td><h4>Purpose</h4></td>
+                
+                <td><input type="checkbox" id="purpose" name="purpose" value="purpose" required/><label for="wood" > I have an issue with the wood</label></td>
+              </tr>
+            
+              <tr> 
+                <td><h4>Email</h4></td>
+                <td><input id="email" type="email" required/></td>
+              </tr>
+
+              <tr> 
+
+                <td><h4>Message</h4></td>
+                <td><textarea id="message" required="required"/></textarea></td>
+              </tr> 
+
+              <tr>
+               <td><input type="submit" value="Send Message"  ></td>
+              </tr>
+            </form>
+          </table>
+        </div>
+
+          <!--Table for main-->
+          <div class="prod_box2">
+            <table>
+              <td>
+                <tr><h4>Contact us</h4></tr>
+                <tr><p>Tel: 01113 344 2356</p></tr>              
+                <tr><p>Email: info.payw.com</p></tr>              
+                <tr><p>Address: 52 Uxbridge Road Belfast BU6</p></tr> 
+              </td>
+            </table>
+          </div>
+          <!--close prodbox2-->
+          <!----------------------------------------->
+
+          <div class="contain">
+              <!--Table for main-->
+              <table>
+                <h4 id="contact_h4"> Our Locator</h4>
+                <tr><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2311.244923352179!2d-5.950430985023797!3d54.59967778779521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4861085e17267735%3A0x660c836313104f0b!2sTwin%20spires%20complex%2C%20Northumberland%20St%2C%20Belfast%20BT13%202JF!5e0!3m2!1sen!2suk!4v1642355177251!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></tr>
+              </table>
+                <!----------------------------------------->
+          </div>
+        <!--close contain-->
+      </main>
+      <footer>
+        <h5>&copy:Furniture R US</h5>
+      </footer>
+    </div>
+    <!--container-->
+  </body>
+</html>
